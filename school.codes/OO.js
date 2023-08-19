@@ -108,3 +108,13 @@ const rect=box.getBoundingClientRect()
 console.log(rect)
 let year=new Date
 console.log(year)
+const emergencyBtn=document.getElementById("school-new-btns")
+         emergencyBtn.addEventListener("click",()=>{
+            if("geolocation"in navigator){
+    navigator.geolocation.getCurrentPosition(function(position){
+        const latitude=position.coords.latitude
+        const longitude=position.coords.longitude
+        console.log(latitude + " , " + longitude)
+    })
+}
+})
