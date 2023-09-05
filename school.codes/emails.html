@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communicate</title>
+</head>
+<body>
+   <style>
+    body{
+        color: antiquewhite;
+        background-color: rgb(26, 25, 25);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    fieldset{
+        width: 70vw;
+        height: 80vh;
+        display: grid;
+        place-items: center;
+    }
+    legend{
+        background-color: rgba(245, 245, 220, 0);
+        padding: 3px;
+        border-radius: 4px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+    }
+    #to{
+        width: 60vw;
+        height: 4vh;
+        border: 2px solid ;
+        padding-left: 10px;
+        color: beige;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 5px;
+    }
+    #from{
+        width: 60vw;
+        height: 4vh;
+        border: 2px solid ;
+        padding-left: 10px;
+        color: beige;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 5px;
+    }
+    #subject{
+        width: 60vw;
+        height: 4vh;
+        border: 2px solid ;
+        padding-left: 10px;
+        color: beige;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 5px;
+    }
+    #textar{
+        width: 70vw; 
+        height: 35vh;
+        text-align: center;
+        color: beige;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 5px;
+    }
+    #emcont{
+        display: grid;
+        place-items: center;
+    }
+    .submit{
+        margin-top: 1vh;
+        color: white;
+        background-color: rgb(50, 50, 255);
+        width: 10vw;
+        height: 5vh;
+        border: none;
+        transition: 400ms;
+    }
+    .submit:hover{
+        transition: 200ms;
+        background-color: rgb(26, 26, 223);
+    }
+   </style> 
+   <h1 style="border-radius: 10px;">COMMUNICATE VIA EMAIL HERE</h1>
+   <div id="emcont">
+    <form action="">
+        <fieldset >
+            <legend>Tell us</legend>
+            TO:<br><input placeholder="Mail to" name="to" type="text" id="to"><br>
+            FROM:<br><input placeholder="Mail From" name="from" type="text" id="from"><br>
+            SUBJECT:<br><input placeholder="Mail subject" name="subject" type="text" id="subject"><br>
+            <textarea id="textar" name="mailcontent">//Enter Your Message Here</textarea>
+            <input class="submit" type="submit">
+        </fieldset>
+    </form>
+   </div>
+</body>
+</html>
