@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin a book</title>
+</head>
+<body>
+    <style>
+        body{
+            color: rgb(0, 0, 0);
+            background: rgb(236, 236, 255);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            
+        }
+        
+        #body{
+            display: grid;
+            place-content: center;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            /* color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255); */
+        }
+        #submit{
+            border: none;
+            color: white;
+            width: 100px;
+            height: 30px;
+            transition: all 200ms;
+            background-color:rgb(62, 62, 255);
+            border-radius: 3px;
+        }
+        #submit:hover{
+            transition: all 300ms;
+            background-color: rgb(111, 111, 255);
+        }
+        #fieldset{
+            padding: 30px;
+            border: 2px solid white;
+            cursor: default;
+            border-radius: 10px;
+            background-color: rgb(236, 236, 255);
+            color: rgb(2, 2, 1);
+            font-style: italic;
+            font-weight: 500;
+        }
+        #booktitle{
+            width: 250px;
+            height: 35px;
+            text-align: center;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+        #radio{
+            width: 30px;
+            height: 30px;
+            border: 2px solid black;
+        }
+        #books{
+            position: absolute;
+            width: 220px;
+            height: 140px;
+            top: 100px;
+            left: 700px;
+            background-color: rgba(95, 158, 160, 0);
+        }
+    </style>
+    <div id="books">
+        <img height="102%" width="102%" style="object-fit:cover;"  src="../important.pics/book (1).png">
+    </div>
+    <h1 style="text-align: center;">BOOK A BOOK! RIGHT HERE! DAHH....</h1>
+<div id="body">
+    <form>
+<fieldset id="fieldset">
+    
+        <h3>Enter Title Here Please!</h3> <br>
+        <input type="text" name="booktitle" placeholder="Booktitle" id="booktitle"><br>
+        <u>Section:</u> <br><hr/>
+        <input type="radio" name="section" value="science" id="radio"> Science
+        <input type="radio" name="section" value="law" id="radio"> Law
+        <input type="radio" name="section" value="Engeenering" id="radio"> Engeenering
+        <input type="radio" name="section" value="Medical" id="radio"> Medical
+        <input type="radio" name="section" value="Electronics" id="radio"> Electronics
+        <input type="radio" name="section" value="Literature" id="radio"> Literature
+        <br>
+        <hr/>
+        <u>Duration of Pin:</u><br><hr/>
+        <input type="checkbox" name="time" value="2 weeks" id="radio"> 2 weeks
+        <input type="checkbox" name="time" value="1 month" id="radio"> 1 month
+        <input type="checkbox" name="time" value="1.5 months" id="radio"> 1.5 months
+        <input type="checkbox" name="time" value="Full semester" id="radio"> Full semester
+        <hr/>
+</fieldset>
+<input type="submit" id="submit" value="Pin Book"></form>
+</div>
+</body>
+</html>
