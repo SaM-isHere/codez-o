@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalinfo</title>
+</head>
+<body>
+    <style>
+        body{
+            /* background-color: rgb(24, 24, 24); */
+            background-color: rgb(43, 42, 42);
+            /* place-content: center;
+            place-items: center; */
+        }
+        .body{
+            /* border-radius: 30px; */
+            display: grid;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            place-content: center;
+            
+        }
+        .personalinfo{
+            box-shadow: 21px 21px 10px rgb(22, 22, 22);
+            border-radius: 30px;
+            width: 80vw;
+            height: 90vh;
+            box-sizing: border-box;
+            background-color: rgb(24, 24, 24);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        .infocart{
+            background-color: rgba(58, 57, 56, 0);
+            border-radius: 10px;
+            width: 96%;
+            height: 30%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 10px;
+        }
+        .infocart1{
+            box-sizing: border-box;
+            background-color: rgba(58, 57, 56, 0);
+            border-radius: 10px;
+            width: 90%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 7px;
+            row-gap: 10px;
+        }
+        #profilers{
+            background-color: rgba(43, 42, 41, 0.014);
+            width: 28%;
+            height: 90%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #profilers1{
+            background-color: rgba(255, 235, 205, 0);
+            width: 65%;
+            height: 90%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 4px;
+            box-sizing: border-box;
+            row-gap: 5px;
+        }
+        .schoolids1{
+            width: 90%;
+            height: 24%;
+            background-color: rgb(39, 39, 38);
+            display: grid;
+            place-content: center;
+            color: antiquewhite;
+            font-family: 'Segoe UI', Tahoma;
+            font-weight: 600;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .schoolids2{
+            width: 90%;
+            height: 24%;
+            background-color: rgb(39, 39, 38);
+            display: grid;
+            place-content: center;
+            color: antiquewhite;
+            font-family: 'Segoe UI', Tahoma;
+            font-weight: 600;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .schoolids3{
+            width: 90%;
+            height: 24%;
+            background-color: rgb(39, 39, 38);
+            display: grid;
+            place-content: center;
+            color: antiquewhite;
+            font-family: 'Segoe UI', Tahoma;
+            font-weight: 600;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .details1{
+            width: 70vw;
+            height: 13vh;
+            background-color: rgb(39, 39, 38);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 20px;
+            transition: all 500ms;
+            border-radius: 14px;
+        }
+        .details2{
+            width: 70vw;
+            height: 13vh;
+            background-color: rgb(39, 39, 38);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 20px;
+            transition: all 500ms;
+            border-radius: 14px;
+        }
+        .details3{
+            width: 70vw;
+            height: 13vh;
+            background-color: rgb(39, 39, 38);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 20px;
+            transition: all 500ms;
+            border-radius: 14px;
+        }
+        .details4{
+            width: 70vw;
+            height: 13vh;
+            background-color: rgb(39, 39, 38);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 20px;
+            transition: all 500ms;
+            border-radius: 14px;
+        }
+        .details5{
+            width: 70vw;
+            height: 13vh;
+            background-color: rgb(39, 39, 38);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 20px;
+            transition: all 500ms;
+            border-radius: 14px;
+        }
+        .details1:hover{
+            
+            transform: scale(1.15);
+            box-shadow: 0px 0px 1px rgb(25, 0, 255);
+            transition: all 500ms;
+        }
+        .details2:hover{
+            transition: all 500ms;
+            transform: scale(1.15);
+            box-shadow: 0px 0px 1px rgb(25, 0, 255);
+        }
+        .details3:hover{
+            transition: all 500ms;
+            transform: scale(1.15);
+            box-shadow: 0px 0px 1px rgb(25, 0, 255);
+        }
+        .details4:hover{
+            transition: all 500ms;
+            transform: scale(1.15);
+            box-shadow: 0px 0px 1px rgb(25, 0, 255);
+        }
+        .details5:hover{
+            transition: all 400ms;
+            transform: scale(1.15);
+            box-shadow: 0px 0px 1px rgb(25, 0, 255);
+        }
+        .head{
+            width: 20%;
+            height: 84%;
+            border-radius: 10px;
+            background-color: rgb(48, 49, 49);
+            display: grid;
+            place-content: center;
+            color: antiquewhite;
+            font-family: 'Segoe UI', Tahoma;
+            font-weight: 600;
+            padding: 10px;
+            overflow-wrap:break-word;
+            box-sizing: border-box;
+            word-wrap: break-word;
+        }
+        @media screen and (max-width:700px ) {
+            .head{
+                font-size: small;
+            }
+        }
+        .head-dets{
+            width: 70%;
+            height: 90%;
+            border-radius: 10px;
+            background-color: rgb(48, 49, 49);
+            display: grid;
+            place-content: center;
+            color: antiquewhite;
+            font-family: 'Segoe UI', Tahoma;
+            font-weight: 600;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    
+    </style>
+    <div class="body">
+    <div class="personalinfo">
+        <div class="infocart">
+            <div id="profilers">
+                <img  src="../important.pics/deer.png"style="background-color:white; object-fit:cover; border-radius:50%; display:flex;border:1px solid white;" height="100vh" width="100vw">
+            </div>
+            <div id="profilers1">
+                <div class="schoolids1">SAMSON</div>
+                <div class="schoolids2">G126/1618/2021</div>
+                <div class="schoolids3">BSC COMPUTER SCIENCE</div>
+            </div>
+        </div>
+        <div class="infocart1">
+                <div class="details1">
+                    <div class="head">Age</div>
+                    <div class="head-dets">22</div>
+                </div>
+                <div class="details2">
+                    <div class="head">Marital Status</div>
+                    <div class="head-dets">Single</div>
+                </div>
+                <div class="details3">
+                    <div class="head">Conditions</div>
+                    <div class="head-dets">None</div>
+                </div>
+                <div class="details4">
+                    <div class="head">Home Address</div>
+                    <div class="head-dets">+254 724096494</div>
+                </div>
+                <div class="details5">
+                    <div class="head">Citizen</div>
+                    <div class="head-dets">KENYAN</div>
+                </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
